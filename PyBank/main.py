@@ -31,23 +31,17 @@ with open (csvpath,newline="") as csvfile:
 # average of the changes 
     del change[0]
     average=round(sum(change)/(len(months)-1),2)
-#print result 
-print("Financial Analysis")
-print("----------------------------")
-print(f'Total Months: {len(months)}')
-print(f'Total: ${total}')
-print(f'Average  Change: ${average}')
-print(f'Greatest Increase in Profits: {inc_date} (${gr8INC})')
-print(f'Greatest Decrease in Profits: {dec_date} (${gr8DEC})')
 #save to an output file
-output=os.path.join("Output/Output.csv")
-with open (output,"w",newline="") as datafile:
-    writer=csv.writer(datafile)
-    writer.writerow(["Financial Analysis"])
-    writer.writerow(["----------------------------"])
-    writer.writerow(["Total Months",len(months)])
-    writer.writerow(["Total","$"+str(total)])
-    writer.writerow(["Average Change", "$"+str(average)])
-    writer.writerow(["Greatest Increase in Profits", inc_date, "$"+str(gr8INC)])
-    writer.writerow(["Greatest Decrease in Profits",dec_date,"$"+str(gr8DEC)])
-  
+output=os.path.join("Output/Output.txt")
+with open (output,"w") as datafile:
+    print("Financial Analysis",file=datafile)
+    print("----------------------------",file=datafile)
+    print("Total Months:"+str(len(months)),file=datafile)
+    print("Total: $"+str(total), file=datafile)
+    print("Average Change: $"+str(average),file=datafile)
+    print("Greatest Increase in Profits: "+str(inc_date)+" ($"+str(gr8INC)+")", file=datafile)
+    print("Greatest Decrease in Profits: ",str(dec_date)+" ($"+str(gr8DEC)+")", file=datafile)
+#print summary
+
+with open (output,"r",newline="") as datafile2:
+    print(datafile2.read())
