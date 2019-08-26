@@ -15,7 +15,7 @@ To run enter the following into the command line: $ python budget_analyis.py
 
 Results are located in the Output folder of the repository. 
 
-![Output](https://github.com/mddesta/Python-challenge/blob/master/PyBank/Output/Output.png) 
+![Output](https://github.com/mddesta/Python-challenge/blob/master/PyBank/Output/Output.PNG) 
 
 ## PyPoll
 
@@ -32,4 +32,4 @@ To run enter the following into the command line: $ python poll_analyis.py
 
 Results are located in the Output folder of the repository. 
 
-![Output](https://github.com/mddesta/Python-challenge/blob/master/PyPoll/Output/Output.png)
+![Output](https://github.com/mddesta/Python-challenge/blob/master/PyPoll/Output/Output.PNG)
