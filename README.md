@@ -2,10 +2,13 @@
 
 ## PyBank 
 
-#### Introduction 
+#### Introduction
+
 This python program takes a list of financial records included in budget_data.csv and determines some summary statistics.
 
 #### Requirements 
+
+Python 3.7.2
 
 #### Running the code
 
@@ -20,9 +23,11 @@ Results are located in the Output folder of the repository.
 ## PyPoll
 
 #### Introduction 
+
 This python program takes a list of ellection records included in election_data.csv and determines some summary statistics.
 
 #### Requirements 
+Python 3.7.2
 
 #### Running the code
 
